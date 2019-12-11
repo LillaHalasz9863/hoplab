@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  margin: 0;
+  font-family: "Nanum Gothic", sans-serif;
+}
+h2 {
+  text-align: center;
+  padding: 3%;
+}
+h3{
+  text-align: center;
+  padding: 3%;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, [col-start] 1fr);
+  grid-gap: 20px;
+}
+
+.wrapper > * {
+  grid-column: col-start / span 4;
+}
+
+
+#about_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+#team_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+#prices_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+#event_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+#gallery_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+#contact_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+
+/*-------------------------This is where the styling starting------------------------*/
+.main-nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #5694b7; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#5694b7, white);
+  position:relative;
+  width: 100%;
+  margin: 0;
+  top: 0;
+}
+
+.main-nav li {
+  float: left;
+	display: flex
+}
+
+.main-nav a {
+  float: left;
+  display: block;
+  color: #3c3c3c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.main-nav a:hover {
+  background: #d9e3ea;
+}
+/*--------------------------This is where the navigation style ends--------------------*/
+
+/*-----------------------This is the start of the styling of the price "table"----------------------*/
+
+.columns {
+  float: left;
+  padding: 8px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.price .header {
+  background-color: #5694b7;
+  color: white;
+  font-size: 25px;
+}
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+.price .period {
+  background-color: #eee;
+  font-size: 20px;
+}
+.button {
+  background-color: #d99771;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+/*-----------------This is the end of the price style---------------------*/
+
+/*----------------The start of the contact fill in form-----------------------------*/
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #5694b7;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #184778;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*-----------------------------This is the end of the form style--------------------------*/
+
+/*---------------This is the map style----------------------------*/
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none;
+  display: flex;
+  justify-content: center;
+}
+/*-------------The end of the map styling---------------*/
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	padding-bottom:20px;
+}
+
+img {
+	width:300px;
+}
+img.teamphoto{
+	width:150px;
+}
+img#aboutphoto {
+	width:80%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+	padding-left:40px;
+	padding-right: 40px;
+	padding-top: 20px;
+}
+
+img#homepic {
+	width:80%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+  	align-items: center;
+	padding:0% 15% 0% 15%;
+}
+
+@media (max-width: 600px) {
+#main_container {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#about_container {
+    display: grid;
+    grid-template-columns: 1fr;
+	padding: 2% 5% 2% 5%;
+}
+#team_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	padding: 2% 5% 2% 5%;
+}
+#prices_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	padding: 2% 5% 2% 5%;
+}
+#event_container {
+    display: grid;
+    grid-template-columns: 1fr;
+	padding: 2% 5% 2% 5%;
+}
+#gallery_container {
+    display: grid;
+    grid-template-columns: 1fr;
+	padding: 2% 5% 2% 5%;
+}
+#contact_container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}

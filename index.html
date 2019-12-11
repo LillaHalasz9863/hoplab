@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hopla</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"/>
+    <!--google font link-->
+    <script
+      src="https://kit.fontawesome.com/2bb3f1dfbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--the icons from font awsome, a link where it can download the icons-->
+  </head>
+
+  <body>
+    <div class="main_container">
+      <!--This is where the navigation bar/menu bar is starting-->
+      <nav class="main-nav">
+        <ul>
+			<div class="menu-tab">
+			<li>
+            <a href="#home_container">
+				<i class="fas fa-home fa-fw"></i>Home
+			</a>
+          	</li>
+			</div>
+			<div class="menu-tab">
+          	<li>
+            <a href="#about_container">
+				<i class="fas fa-users fa-fw"></i>About us
+			</a>
+         	</li>
+			</div>
+			<div class="menu-tab">
+          	<li>
+            <a href="#prices_container">
+				<i class="fas fa-dollar-sign fa-fw"></i>Prices
+			</a>
+          	</li>
+			</div>
+			<div class="menu-tab">
+          	<li>
+            <a href="#event_container">
+				<i class="fas fa-calendar-alt fa-fw"></i>Events
+			</a>
+          	</li>
+			</div>
+			<div class="menu-tab">
+          	<li>
+            <a href="#gallery_container">
+			<i class="fas fa-images fa-fw"></i>Gallery
+			</a>
+          	</li>
+			</div>
+			<div class="menu-tab">
+          	<li>
+            <a href="#contact_container">
+			<i class="fas fa-mail-bulk fa-fw"></i>Contact
+			</a>
+          	</li>
+			</div>
+        </ul>
+     </nav>
+	</div>
+<!--The end of the navigation bar-->
+	  
+	 
+
+<!--Homepage content start-->
+	  <section id="home_container">
+		<img id="homepic" src="home.png" alt="A girl holding an ice skate + our slogen" />
+	  </section>
+      <!--This is where the homepage ends-->
+
+      <!-- With the section tag, and the given id in the navigation, i can refer to this part (about us) so when we re using the menu button it will jump down to the about section -->
+
+      <!--This is where the about us part starts-->
+      <h2>About us</h2>
+      <section id="about_container">
+        <div class="about">
+          <img id="aboutphoto"
+            src="about.png"
+            alt="A group is ice skating in the golden hour"/>
+        </div>
+        <div class="about">
+          <p>
+            Hopla Ice Skating Club would like to provide a space for those who
+            wants to move their muscles in a fun way and have a nice time with
+            family/friends. Hopla is a great place to experience the beauty of
+            this winter sport and experience it everyday of the year.
+          </p>
+          <p>
+            On the webpage you can find information about our club, prices,
+            special events, a gallery where you can gain insight into Hopla
+            life, and where you can contact us.Have a great surfing!
+          </p>
+        </div>
+      </section>
+
+      <h3>Our team</h3>
+
+      <section id="team_container">
+        <div class="team">
+          <img class="teamphoto" src="Diana.png" alt="Diana's picture" />
+          <h4>Diana</h4>
+        </div>
+        <div class="team">
+          <img class="teamphoto" src="Tray.png" alt="Tray's picture" />
+          <h4>Sitoresmi</h4>
+        </div>
+        <div class="team">
+          <img class="teamphoto" src="Claire.png" alt="Claire's picture" />
+          <h4>Claire</h4>
+        </div>
+        <div class="team">
+          <img class="teamphoto" src="Lilla.png" alt="Lilla's picture" />
+          <h4>Lilla</h4>
+        </div>
+        <div class="team">
+          <img class="teamphoto" src="Anna.png" alt="Anna's picture" />
+          <h4>Anna</h4>
+        </div>
+      </section>
+      <!--This is where the about us ends-->
+
+      <!-- This is the price section -->
+      <h2>Prices and tickets</h2>
+      <section id="prices_container">
+        <div class="columns">
+          <!-- Here we re using the div tag, so in our css we can style the columns all together and we dont have to stick to the table format-->
+          <ul class="price">
+            <li class="header">Basic</li>
+            <li class="period">99 DKK/day</li>
+            <li>Entrance ticket</li>
+            <li>Skate shoes</li>
+            <li>with own skate -10% from ticket</li>
+            <li class="period"><a href="#" class="button">Buy now</a></li>
+          </ul>
+        </div>
+
+        <div class="columns">
+          <ul class="price">
+            <li class="header">Premium</li>
+            <li class="period">150 DKK /day</li>
+            <li>Entrance ticket</li>
+            <li>Skate shoes</li>
+            <li>20% off in the buffet</li>
+            <li class="period"><a href="#" class="button">Buy now</a></li>
+          </ul>
+        </div>
+
+        <div class="columns">
+          <ul class="price">
+            <li class="header">Family</li>
+            <li class="period">350 DKK /day</li>
+            <li>2+2 enterance</li>
+            <li>4 pair of skates</li>
+            <li>30% off in the buffet</li>
+            <li class="period"><a href="#" class="button">Buy now</a></li>
+          </ul>
+        </div>
+
+        <div class="columns">
+          <ul class="price">
+            <li class="header">Company</li>
+            <li class="period">5000 DKK /day</li>
+            <li>Opportunity to book the rink</li>
+            <li>Skate shoes</li>
+            <li>30% off in the buffet</li>
+            <li class="period"><a href="#" class="button">Buy now</a></li>
+          </ul>
+        </div>
+      </section>
+      <!--This is where the price part is ending-->
+
+      <!--This is where the events section starts-->
+      <h2>Events</h2>
+      <section id="event_container">
+        <div class="event">
+          <h3>31.10. Halloween day</h3>
+          <p>
+            During this event, people have to wear costumes. There will be award
+            for the best costume and people can enjoy special halloween drinks.
+          </p>
+          <img src="hallo.jpg" alt="A family is skating in colorful suits" />
+        </div>
+        <div class="event">
+          <h3>24.12. Christmas evening</h3>
+          <p>
+            Christmas eve is one of the most special events. You can enjoy
+            christmas time with family and friends, drinks and atmosphere.
+          </p>
+          <img src="christ.jpeg" alt="Christmas themed ice rink" />
+        </div>
+        <div class="event">
+          <h3>31.12. New years eve</h3>
+          <p>
+            During this event you can celebrate the New year with us also with
+            champagne, wireworks and all new year things.
+          </p>
+          <img src="newy.png" alt="Road with colorful lights" />
+        </div>
+        <div class="event">
+          <h3>14.2. Valentine's day</h3>
+          <p>
+            Enjoy this lovely day with your half at our place. You can find
+            there roses which you can give to your love person. You can see red
+            and hearty decoration. Enjoy this day of love with us !
+          </p>
+          <img src="valentin.jpg" alt="A happy couple" />
+        </div>
+      </section>
+      <!--This is where the events section ends-->
+
+      <!--This is where the gallery starts-->
+      <h2>Gallery</h2>
+      <section id="gallery_container">
+        <div class="gallery">
+          <img src="gal.JPG" alt="A couple skating together" />
+        </div>
+        <div class="gallery">
+          <img src="gal2.jpg" alt="Two girls skating" />
+        </div>
+        <div class="gallery">
+          <img
+            src="gal3.jpeg"
+            alt="Ice rink with people, in the background a christmas tree"
+          />
+        </div>
+        <div class="gallery">
+          <img src="gal4.jpg" alt="A kid and her mother putting on the skate" />
+        </div>
+        <div class="gallery">
+          <img src="gal5.jpg" alt="Friends" />
+        </div>
+        <div class="gallery">
+          <img src="gal6.jpg" alt="Two girls" />
+        </div>
+      </section>
+      <!--This is the end of the gallery section-->
+
+      <!--This is where the contact part starts-->
+      <h2>Contact</h2>
+      <section id="contact_container">
+        <div class="contact">
+          <p>hoplaskate@gmail.com<i class="fas fa-envelope fa-fw"></i></p>
+          <p>+45111111<i class="fas fa-phone fa-fw"></i></p>
+          <p>Open everyday: 8-23<i class="far fa-clock fa-fw"></i></p>
+        </div>
+
+        <div class="contact">
+          <form class="form" action="/action_page.php">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+            />
+
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your e-mail address"
+            />
+
+            <label for="subject"></label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Leave a message.."
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+
+      <div class="gmap_canvas">
+        <iframe
+          width="300"
+          height="300"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=Uddannelsesvej%2022%2C%20K%C3%B8ge&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        >
+        </iframe>
+      </div>
+
+      <!--This is where the contact part ends-->
+  </body>
+</html>
